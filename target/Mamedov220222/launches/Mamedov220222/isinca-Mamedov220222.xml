@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ISInCa>
+	<pref>
+	    <getTXT>false</getTXT>
+        <getSummary>true</getSummary>
+        <visualize>false</visualize>
+        <combine>true</combine>
+		<dirSubname>angle</dirSubname>
+		<combSum>Fe,Cr,Ni,Ti</combSum>
+    </pref>
+    <calcs>
+        <calc id="0">
+			<dir>1_D20,0deg0,2keV_FeCrNiTi150k</dir>
+			<dir>2_D40,0deg30,0keV_FeCrNiTi7M</dir>
+            <N_E>
+                <sort>B</sort>
+                <phi>0</phi>
+                <deltaPhi>3</deltaPhi>
+                <deltaTheta>3</deltaTheta>
+            </N_E>
+            <N_Theta>
+                <sort>S</sort>
+                <phi>0</phi>
+                <deltaPhi>3</deltaPhi>
+                <deltaTheta>3</deltaTheta>
+            </N_Theta>
+            <polar_Map>
+                <sort>S</sort>
+                <delta>3</delta>
+            </polar_Map>
+        </calc>
+    </calcs>
+</ISInCa>

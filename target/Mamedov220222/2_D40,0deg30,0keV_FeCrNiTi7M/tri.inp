@@ -1,0 +1,43 @@
+30,0 keV D -> FeCrNiTi 40,0 degrees
+   &TRI_INP
+text='---elemements---'     
+     ncp = 5
+     symbol ="D","Fe","Cr","Ni","Ti"
+     
+     nh       =   7000
+     idout    =   1000000
+     nr_pproj = 1000
+     
+	 iintegral=0
+     idrel = 1
+     isbv  = 1
+     ipot  = 1
+     imcp  = 1
+     inel0 = 2
+	
+text='---beam---' 
+     qubeam = 1, 0, 0, 0, 0     
+     case_e0=0
+     e0     =  30000.0, 0, 0, 0, 0
+
+     case_alpha=0
+     alpha0 =   40.0, 0, 0, 0, 0
+     
+text='---target---'
+     ttarget = 2000 
+     nqx     = 500 
+     qu      = 0, 0.674, 0.179, 0.101, 0.046
+	 
+	 irc0=1
+       
+     numb_hist = 1    
+	 number_calc=1
+	 
+	 lenergy_distr=.true.
+     lparticle_p=.true.
+     lparticle_r=.true.
+	 ioutput_hist = 2
+     ioutput_part=1000,100000000,1000,100000,1000000000,1000
+	 lmatrices=.true.
+	 lmoments=.true.
+/

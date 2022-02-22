@@ -15,7 +15,7 @@ public class Tri {
 
 
 
-    public String createDir(){
+    public String getDir(){
         String dir = ID+"_"+projectile+angle+"deg"+energy+"keV_"+solid;
         dir+=((counts%1000==0) ? (counts/1000)+"M" : counts+"k");
         return  dir.replaceAll("\\.",",");
